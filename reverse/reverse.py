@@ -42,22 +42,7 @@ class LinkedList:
     # if we've gotten here, then the target node isn't in our list
     return False
 
-  # def reverseHelper(self, current, previous): 
-  #       if current.next_node is None : 
-  #           self.head = current  
-  #           current.next_node = previous 
-  #           return           
-  #       next_node = current.next_node 
-  #       current.next_node = previous       
-  #       self.reverseHelper(next_node, current)
-
   def reverse_list(self):
-
-    ### Solution with helper
-    # if self.head is None: 
-    #     return 
-    # self.reverseHelper(self.head, None)    
-
     previous = None
     current = self.head
     while (current is not None):
